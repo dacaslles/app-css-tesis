@@ -1,0 +1,93 @@
+#main-level-div {
+    background-image: url('../../../../../assets/images/IMG_0136.JPG');
+    background-size: contain;
+    min-height: 95vh;
+    padding: 1rem 1rem;
+    display: flex;
+}
+
+#left-panel {
+    width: 35%;
+    margin: 0rem 0.3rem;
+    display: flex;
+    flex-direction: column;
+}
+
+#right-panel {
+    background-color: rgba(255, 255, 255, 0.1);
+    width: 65%;
+    margin: 0rem 0.3rem;
+    display: flex;
+    flex-direction: column;
+}
+
+#left-top-panel {
+    background-color: rgba(255, 255, 255, 0.3);
+    margin: 0 0 0.3rem 0;
+    height: 50%;
+    padding: 0.5rem;
+}
+
+#left-bottom-panel {
+    background-color: rgba(255, 255, 255, 0.3);
+    margin: 0.3rem 0 0 0;
+    height: 50%;
+    padding: 0.5rem;
+}
+
+.content-box {
+    background-color: #0E0035;
+    height: 97%;
+    color: white;
+    padding: 0.3rem 0.5rem;
+
+    h3 {
+        margin: 0;
+    }
+
+    .type-text {
+        font-family: 'Courier New', monospace;
+    }
+}
+
+.scrollable {
+    overflow: auto;
+}
+
+.challenge-section {
+    line-height: 1.6;
+    .brackets {
+        margin-top: 0.5rem;
+    }
+}
+
+.game-box {
+    margin-top: auto;
+    margin-bottom: auto;
+    #selector-color {
+        height: 270px;
+        > div {
+            display: flex;
+            justify-content: space-evenly;
+
+            img {
+                max-height: 200px;
+            }
+
+            .blurred {
+                background-color: black;
+                filter: blur(4px);
+                border-radius: 4px;
+                padding: 1.25rem;
+            }
+
+            .name {
+                font-size: 1.25rem;
+                color: white;
+                padding: 0.3rem;
+                //position: absolute;
+                transform: translate(0%, -100%);
+            }
+        }
+    }
+}
