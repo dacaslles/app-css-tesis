@@ -1,0 +1,199 @@
+<div class="main-panel">
+    <!-- Panel derecho -->
+    <div class="left-panel">
+        <div class="left-top-panel">
+            <div class="content-box scrollable">
+                <div>
+                    <h3 class="lesson-title">SELECTORES</h3>
+                    <div>
+                        En CSS los selectores son utilizados para delimitar a los componentes que serán afectados por un conjunto
+                            de atributos. Existen 3 tipos de selectores: por etiqueta, por clase y por identificador.
+                        <ul>
+                            <li>
+                                <b>Etiqueta:</b> Se indica la etiqueta (tag) de html que será afectada. Los estilos serán aplicados
+                                a todas las etiquetas que se indique.
+                            </li>
+                            <li>
+                                <b>Clase:</b> A la etiqueta se le indica las clases que serán aplicadas para modificar su estilo. No
+                                    importa el tipo de etiqueta, si tiene una clase indicada esta será afectada por los atributos que tenga.
+                            </li>
+                            <li>
+                                <b>Identificador: </b> En el archivo CSS se indica el nombre de un elemento y solamente ese elemento
+                                    será afectado por los atributos que allí se especifiquen. Este es el selector más particular que
+                                    existe ya que solo afectará a un elemento en todo el código.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="left-bottom-panel">
+            <div class="content-box scrollable">
+                <div>
+                    <h3>RETO</h3>
+                    <div>
+                        Los selectores serán utilizados de la siguiente forma: los nombres son equivalentes al selector
+                        "identificador" y el tipo es equivalente al selector "clase".
+                        <br>Debes hacer que a todos los fantasmas se les aplique una modificación
+                    </div>
+                    <div class="excercise-form">
+                      <form [formGroup]="lessonOneForm">
+                        <div>
+                          <div>
+                            #<input type="text" formControlName="codeOneName" (blur)="inputBlur('codeOneName')"/>
+                            , .<input type="text" formControlName="codeOneType" (blur)="inputBlur('codeOneType')"/>
+                          </div>
+                          <div>
+                            &lbrace; <br>
+                              content: 'Fantasma con gorro' <br>
+                            &rbrace;
+                          </div>
+                        </div>
+                        <div>
+                          <div>
+                            #<input type="text" formControlName="codeTwoName" (blur)="inputBlur('codeTwoName')"/>
+                            , .<input type="text" formControlName="codeTwoType" (blur)="inputBlur('codeTwoType')"/>
+                          </div>
+                          <div>
+                            &lbrace; <br>
+                              content: 'Fantasma con gorro' <br>
+                            &rbrace;
+                          </div>
+                        </div>
+                        <div>
+                          <div>
+                            #<input type="text" formControlName="codeThreeName" (blur)="inputBlur('codeThreeName')"/>
+                            , .<input type="text" formControlName="codeThreeType" (blur)="inputBlur('codeThreeType')"/>
+                          </div>
+                          <div>
+                            &lbrace; <br>
+                              content: 'Fantasma con gorro' <br>
+                            &rbrace;
+                          </div>
+                        </div>
+                        <div>
+                          <div>
+                            #<input type="text" formControlName="codeFourName" (blur)="inputBlur('codeFourName')"/>
+                            , .<input type="text" formControlName="codeFourType" (blur)="inputBlur('codeFourType')"/>
+                          </div>
+                          <div>
+                            &lbrace; <br>
+                              content: 'Fantasma con gorro' <br>
+                            &rbrace;
+                          </div>
+                        </div>
+                        <div>
+                          <div>
+                            #<input type="text" formControlName="codeFiveName" (blur)="inputBlur('codeFiveName')"/>
+                            , .<input type="text" formControlName="codeFiveType" (blur)="inputBlur('codeFiveType')"/>
+                          </div>
+                          <div>
+                            &lbrace; <br>
+                              content: 'Fantasma con gorro' <br>
+                            &rbrace;
+                          </div>
+                        </div>
+                        <div>
+                          <div>
+                            #<input type="text" formControlName="codeSixName" (blur)="inputBlur('codeSixName')"/>
+                            , .<input type="text" formControlName="codeSixType" (blur)="inputBlur('codeSixType')"/>
+                          </div>
+                          <div>
+                            &lbrace; <br>
+                              content: 'Fantasma con gorro' <br>
+                            &rbrace;
+                          </div>
+                        </div>
+                      </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Panel izquierdo -->
+    <div class="right-panel">
+        <div class="game-box">
+            <div id="selector-colors">
+                <div>
+                    <div>
+                        <img [src]="ghostNames[0].url">
+                        <div>
+                            <div class="blurred"></div>
+                            <div class="name">
+                                <div style="text-align: center;">
+                                  Nombre: {{ghostNames[0].name}}
+                                  <br>Tipo: {{ghostNames[0].type}}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <img [src]="ghostNames[1].url">
+                        <div>
+                            <div class="blurred"></div>
+                            <div class="name">
+                              <div style="text-align: center;">
+                                Nombre: {{ghostNames[1].name}}
+                                <br>Tipo: {{ghostNames[1].type}}
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <img [src]="ghostNames[2].url">
+                        <div>
+                            <div class="blurred"></div>
+                            <div class="name">
+                              <div style="text-align: center;">
+                                Nombre: {{ghostNames[2].name}}
+                                <br>Tipo: {{ghostNames[2].type}}
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="selector-colors">
+                <div>
+                    <div>
+                        <img [src]="ghostNames[3].url">
+                        <div>
+                            <div class="blurred"></div>
+                            <div class="name">
+                              <div style="text-align: center;">
+                                Nombre: {{ghostNames[3].name}}
+                                <br>Tipo: {{ghostNames[3].type}}
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <img [src]="ghostNames[4].url">
+                        <div>
+                            <div class="blurred"></div>
+                            <div class="name">
+                              <div style="text-align: center;">
+                                Nombre: {{ghostNames[4].name}}
+                                <br>Tipo: {{ghostNames[4].type}}
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <img [src]="ghostNames[5].url">
+                        <div>
+                            <div class="blurred"></div>
+                            <div class="name">
+                              <div style="text-align: center;">
+                                Nombre: {{ghostNames[5].name}}
+                                <br>Tipo: {{ghostNames[5].type}}
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

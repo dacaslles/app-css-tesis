@@ -1,0 +1,133 @@
+<div class="main-panel">
+    <!-- Panel derecho -->
+    <div class="left-panel">
+        <div class="left-top-panel">
+            <div class="content-box scrollable">
+                <div>
+                    <h3 class="lesson-title">DISPLAY OUTSIDE</h3>
+                    <div>
+                        La propiedad display en CSS especifica la forma en la que serán desplegados los elementos dentro de un contenedor.
+                        De esta forma es posible indicar si los elementos se mostraran en fila, columna, cuadrícula, si estarán centrados o alineados al final, etc.
+                        Es posible utilizar esta propiedad para indicar la forma de despliegue del propio elemento o indicar la forma en la que serán desplegados
+                        los elementos en su interior, si este se trata como un contenedor. A los valores de display que indican el despliegue del propio elemento se
+                        les conoce como "display outside", mientras que los valores que indican el despliegue de los elementos internos se les conoce como
+                        "display inside".
+                        <br>
+                        Los valores de display outside más utilizados son "block", "inline" y "inline-block".
+
+                        <h4 class="lesson-title">display: block</h4>
+                        Indica que el elemento será desplegado como un elemento "bloque", esto quiere decir que el elemento iniciará suposición en una nueva línea como
+                        lo hacen de forma predeterminada los elementos <i>div</i> y los elementos <i>p</i>.
+                        <br>
+                        <p class="text-example">Ejemplo:</p>
+                        <div class="example-area">
+                            <div class="lesson-d1-ex-1">
+                                <div>
+                                    <h4>Etiquetas <i>span</i> sin modificar su despliegue</h4>
+                                    <span> span rojo </span>
+                                    <span> span azul </span>
+                                    <span> span verde </span>
+                                </div>
+                                <div>
+                                    <h4>Etiquetas <i>span</i> con propiedad display: block</h4>
+                                    <span> span rojo </span>
+                                    <span> span azul </span>
+                                    <span> span verde </span>
+                                </div>
+                            </div>
+                            <div>
+                                <pre>
+                                    <code>
+&lt;h4&gt;Etiquetas &lt;i&gt;span&lt;/i&gt; sin modificar su despliegue&lt;/h4&gt;
+&lt;span class=&quot;span-rojo&quot;&gt; span rojo &lt;/span&gt;
+&lt;span class=&quot;span-azul&quot;&gt; span azul &lt;/span&gt;
+&lt;span class=&quot;span-verde&quot;&gt; span verde &lt;/span&gt;
+
+&lt;h4&gt;Etiquetas &lt;i&gt;span&lt;/i&gt; con propiedad display: block&lt;/h4&gt;
+&lt;span class=&quot;span-verde display-block&quot;&gt; span rojo &lt;/span&gt;
+&lt;span class=&quot;span-azul display-block&quot;&gt; span azul &lt;/span&gt;
+&lt;span class=&quot;span-verde display-block&quot;&gt; span verde &lt;/span&gt;
+                                    </code>
+                                </pre>
+                            </div>
+                            <div>
+                                <pre>
+                                    <code>
+.span-rojo &lbrace;
+    background-color: red;
+&rbrace;
+.span-azul &lbrace;
+    background-color: blue;
+&rbrace;
+.span-verde &lbrace;
+    background-color: green;
+&rbrace;
+.display-block &lbrace;
+    display: block;
+&rbrace;
+                                    </code>
+                                </pre>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="left-bottom-panel">
+            <div class="content-box scrollable">
+                <div>
+                    <h3>RETO</h3>
+                    <div>
+                        Utiliza los valores de display "block" e "in-line" para cambiar la posición de las calderas, las calderas verdes tienen que estar en forma
+                        vertical y las calderas rosa en forma horizontal.
+                    </div>
+                </div>
+                <div class="challenge-section type-text">
+                    <div class="brackets">
+                        .caldera-morada &lbrace;
+                        <br>&emsp;<span>display: </span> <input>
+                        <br>&rbrace;
+                    </div>
+                    <div class="brackets">
+                        .caldera-azul &lbrace;
+                        <br>&emsp;<span>display: </span> <input>
+                        <br>&rbrace;
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Panel izquierdo -->
+    <div class="right-panel">
+        <div class="game-box">
+            <div id="order-cauldron">
+                <div id="cauldron-table">
+                    <div id="green-cauldron-line">
+                        <div>
+                          <img class="img-ghost" src="assets/images/ghost.gif">
+                            <img class="img-cauldron" src="assets/images/witch-cauldron/cauldron-purple.gif">
+                        </div>
+                        <div>
+                            <img src="assets/images/witch-cauldron/cauldron-purple.gif">
+                        </div>
+                        <div>
+                            <img src="assets/images/witch-cauldron/cauldron-purple.gif">
+                        </div>
+                    </div>
+                    <div id="pink-cauldron-line">
+                        <div>
+                            <img src="assets/images/witch-cauldron/cauldron-blue.gif">
+                        </div>
+                        <div>
+                            <img src="assets/images/witch-cauldron/cauldron-blue.gif">
+                        </div>
+                        <div>
+                            <img src="assets/images/witch-cauldron/cauldron-blue.gif">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

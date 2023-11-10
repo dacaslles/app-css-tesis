@@ -1,0 +1,77 @@
+<div class="main-panel">
+    <!-- Panel derecho -->
+    <div class="left-panel">
+        <div class="left-top-panel">
+            <div class="content-box scrollable">
+                <div>
+                    <h3 class="lesson-title">Display inside - Grid</h3>
+                    <div>
+                        Otra forma de realizar un despliegue de los elementos internos para un contenedor es a través del valor para display "grid". Esta propiedad
+                        permite definir el despliegue de componentes en forma de cuadricula utilizando columnas y filas para definir las posiciones.
+                        <br>
+                        Para utilizar flex basta con indicar este valor en la propiedad display, "display:grid". Con esta propiedad si es necesario específicar 
+                        la distrubución de los elementos, para esto existen varias propiedades de grid con las cuales se indica la cantidad y el tamaño de las
+                        columnas.
+                        
+                        <h4 class="lesson-title">grid-template</h4>
+                        La cantidad de filas y columnas se indica a través de las propiedades "grid-template-columns" y "grid-template-row".
+                        <ul>
+                            <li>
+                                <b>grid-template-column: </b> 
+                                es esta propiedad es posible especificar la cantidad de columnas y el tamaño de las columnas. Existen varias formas de indicarlo, 
+                                puede ser utilizando la instrucción <i>repeat</i> la cual establece las mismas propiedades para todos los elementos o indicar el 
+                                tamaño de cada columna en la fila.
+                            </li>
+                            <li>
+                                <b>grid-template-row: </b>
+                                esta propiedad indica las características que tendrán las filas del contenido, puede especificar la cantidad y el tamaño de las filas
+                                de la misma forma como se especifican las columnas.
+                            </li>
+                        </ul>
+                        <br>
+                        <p class="text-example">Ejemplo:</p>
+                        <div class="example-area">
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="left-bottom-panel">
+            <div class="content-box scrollable">
+                <div>
+                    <h3>Reto</h3>
+                    <div>
+                        Utiliza la propiedad grid y sus características para situar los fantasmas sobre los portales. Las instrucciones CSS afectarán solamente a los
+                        fantasmas, los portales se mantienene estáticos.
+                    </div>
+                </div>
+                <div class="challenge-section type-text">
+                    <div class="brackets">
+                        .contenedor-portales &lbrace;
+                        <br>&emsp;<span>display: </span> <input/>
+                        <br>&emsp;<span>grid-template-column: </span> <input/>
+                        <br>&emsp;<span>grid-template-row: </span> <input/>
+                        <br>&rbrace;
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Panel izquierdo -->
+    <div class="right-panel">
+        <div class="game-box">
+            <div id="portals-location">
+                <div id="ghost-line">
+                    <img [src]="ghost_url" *ngFor="let ghost_url of ghostList">
+                </div>
+                <div id="portals-container">
+                    <div class="portal-spot" *ngFor="let portal_url of portalList">
+                        <img [src]="portal_url">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

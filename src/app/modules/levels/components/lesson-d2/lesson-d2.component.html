@@ -1,0 +1,185 @@
+<div class="main-panel">
+    <!-- Panel derecho -->
+    <div class="left-panel">
+        <div class="left-top-panel">
+            <div class="content-box scrollable">
+                <div>
+                    <h3 class="lesson-title">DISPLAY INSIDE - FLEX</h3>
+                    <div>
+                        Como se mencionó en la lección anterior, un contenedor puede indicar la forma en la cual sus elementos serán desplegados. Los valores "grid"
+                        y "flex" son los más utilizados. Flex tiene la cualidad de ofrecer una variedad de opciones presentando gran flexibilidad al momento de indicar
+                        el despliegue.
+                        <br>
+                        Para utilizar flex basta con indicar este valor en la propiedad display, "display:flex". Inicialmente los elementos serán desplegados de forma
+                        lineal iniciando desde la parte izquierda y ocuparán solamente el espacion de su contenido. Para modificar estas posiciones es necesario agregar
+                        otros atributos.
+
+                        <h4 class="lesson-title">flex-direction</h4>
+                        Este indica la dirección en la cual se ordenarán los elementos, estos pueden ser cuatro valores:
+                        <ul>
+                            <li><b>row:</b> ordenamiento predeterminado en el que los elementos se posicionan de izquierda a derecha</li>
+                            <li><b>column:</b> en este ordenamiento los elementos se posicionarán en forma de bloque, equivalente a "display: block" empezando de la parte
+                            superior hacia abajo</li>
+                            <li><b>reverse column y row:</b> este valor invierte el orden de los elementos según la forma que se haya indicado, en el caso de <i>reverse-row</i>
+                            los elementos serán colocados empezando desde la parte derecha hacia la izquierda y para el valor <i>reverse-column</i> los
+                            elementos se colocarán empezando en la parte inferior hacia arriba</li>
+                        </ul>
+                        <br>
+                        <p class="text-example">Ejemplo:</p>
+                        <div class="example-area">
+                            <div class="lesson-d2-ex-1">
+                                <div>
+                                    <h4>flex row</h4>
+                                    <div id="d2-ex-flex-row">
+                                        <div>Flex 1</div>
+                                        <div>Flex 2</div>
+                                        <div>flex 3</div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <h4>flex column</h4>
+                                    <div id="d2-ex-flex-column">
+                                        <div>Flex 1</div>
+                                        <div>Flex 2</div>
+                                        <div>flex 3</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <pre>
+                                    <code>
+&lt;h4&gt;Etiquetas &lt;i&gt;span&lt;/i&gt; sin modificar su despliegue&lt;/h4&gt;
+&lt;span class=&quot;span-rojo&quot;&gt; span rojo &lt;/span&gt;
+&lt;span class=&quot;span-azul&quot;&gt; span azul &lt;/span&gt;
+&lt;span class=&quot;span-verde&quot;&gt; span verde &lt;/span&gt;
+
+&lt;h4&gt;Etiquetas &lt;i&gt;span&lt;/i&gt; con propiedad display: block&lt;/h4&gt;
+&lt;span class=&quot;span-verde display-block&quot;&gt; span rojo &lt;/span&gt;
+&lt;span class=&quot;span-azul display-block&quot;&gt; span azul &lt;/span&gt;
+&lt;span class=&quot;span-verde display-block&quot;&gt; span verde &lt;/span&gt;
+                                    </code>
+                                </pre>
+                            </div>
+                            <div>
+                                <pre>
+                                    <code>
+.span-rojo &lbrace;
+    background-color: red;
+&rbrace;
+.span-azul &lbrace;
+    background-color: blue;
+&rbrace;
+.span-verde &lbrace;
+    background-color: green;
+&rbrace;
+.display-block &lbrace;
+    display: block;
+&rbrace;
+                                    </code>
+                                </pre>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="left-bottom-panel">
+            <div class="content-box scrollable">
+                <div>
+                    <h3>RETO</h3>
+                    <div>
+                        Utiliza la propiedad flex y el atributo "flex-direction" para cumplir con lo siguiente:
+                        <ul>
+                            <li>
+                                El Distrito Pesadilla debe tener sus casas ordenadas en forma lineal iniciando desde la izquierda
+                            </li>
+                            <li>
+                                El Distrito Fobia debe tener sus casas ordenadas de forma vertical iniciando desde la parte superior
+                            </li>
+                            <li>
+                                El Distrito Vampiro debe tener sus casas ordenadas de forma vertical iniciando desde la parte inferior
+                            </li>
+                            <li>
+                                El Distritio Luna debe tener sus casas ordenadas de forma lineal iniciando desde la parte derecha
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="challenge-section type-text">
+                    <div class="brackets">
+                        .distrito-pesadilla &lbrace;
+                        <br>&emsp;<span>display: flex;</span>
+                        <br>&emsp;<span>flex-direction: </span> <input>
+                        <br>&rbrace;
+                    </div>
+                    <div class="brackets">
+                        .distrito-fobia &lbrace;
+                        <br>&emsp;<span>display: flex;</span>
+                        <br>&emsp;<span>flex-direction: </span> <input>
+                        <br>&rbrace;
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Panel izquierdo -->
+    <div class="right-panel">
+        <div class="game-box">
+            <div id="order-district">
+                <div>
+                    <div class="nightmare-district">
+                        <div class="district-name">
+                            <div>
+                                Distrito Pesadilla
+                            </div>
+                        </div>
+                        <div class="district-content">
+                            <img src="assets/images/hunted-place/pesadilla.gif">
+                            <img src="assets/images/hunted-place/pesadilla.gif">
+                            <img src="assets/images/hunted-place/pesadilla.gif">
+                        </div>
+                    </div>
+                    <div class="phobia-district">
+                        <div class="district-name">
+                            <div>
+                                Distrito Fobia
+                            </div>
+                        </div>
+                        <div class="district-content">
+                            <img src="assets/images/hunted-place/fobia.gif">
+                            <img src="assets/images/hunted-place/fobia.gif">
+                            <img src="assets/images/hunted-place/fobia.gif">
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="vampire-district">
+                        <div class="district-name">
+                            <div>
+                                Distrito Vampiro
+                            </div>
+                        </div>
+                        <div class="district-content">
+                            <img src="assets/images/hunted-place/vampiro.gif">
+                            <img src="assets/images/hunted-place/vampiro.gif">
+                            <img src="assets/images/hunted-place/vampiro.gif">
+                        </div>
+                    </div>
+                    <div class="moon-district">
+                        <div class="district-name">
+                            <div>
+                                Distrito Luna
+                            </div>
+                        </div>
+                        <div class="district-content">
+                            <img src="assets/images/hunted-place/luna.gif">
+                            <img src="assets/images/hunted-place/luna.gif">
+                            <img src="assets/images/hunted-place/luna.gif">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

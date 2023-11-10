@@ -2,8 +2,12 @@
 body {
     margin: 0px;
     background-color: #0E0035;
-    height: 80vh;
-    font-family: 'Assistant'
+    font-family: 'Assistant';
+    overflow-y: hidden;
+    height: 95vh;
 }
 /* Importing Bootstrap SCSS file. */
 //@import '~bootstrap/scss/bootstrap';
+
+/* Importación de archivo de estilos principal */
+@import '/src/assets/styles/game.scss';

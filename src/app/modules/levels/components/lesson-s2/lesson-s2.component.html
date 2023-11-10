@@ -1,0 +1,201 @@
+<div class="main-panel">
+    <!-- Panel derecho -->
+    <div class="left-panel">
+        <div class="left-top-panel">
+            <div class="content-box scrollable">
+                <div>
+                    <h3 class="lesson-title">Relación entre selectores</h3>
+                    <div>
+                        Es posible indicar una relación entre selectores para aumentar la especificación de los elementos a los
+                        cuales se les desea aplicar un grupo de estilos. Estas relaciones indican si los selectores se encuentran
+                        indicados dentro del mismo elemento o si se desea afectar a los elementos que son hijos de uno en específico.
+                        <br>La relación entre los selectores es indicada por la forma en la que se escriben estos:
+                        <ul>
+                            <li>
+                                <b>Relación obligatoria:</b> en esta relación se pide que existan los selectores indicados para
+                                que sea aplicado el estilo. Esto se realiza colocando los dos selectores sin espacio de por medio, 
+                                por ejemplo: .clase1.clase2
+                                <br>El estilo será aplicado si el elemento tiene las dos clases.
+                            </li>
+                            <li>
+                                <b>Sub-elementos general: </b>con esta relación se indica que todos los hijos de el selector padre
+                                se veran afectados por los estilos aplicados. Para indicar esta relación solamente se debe dejar un
+                                espacio entre los selectores, por ejemplo: .clase1 .clase2, div .clase1
+                                <br>En el primer caso, todos los sub-elementos del elemento padre con clase clase "clase1" 
+                                que tengan la clase "clase2" se veran afectados por los estilos.
+                                <br>En el segundo caso, todos los sub-elementos de las etiquetas "div" que tengan como clase "clase2"
+                                serán afectados por los estilos.
+                            </li>
+                            <li>
+                                <b>Sub-elementos directos:</b> si lo que se desea es afectar solo los hijos directos de un selector, 
+                                se tiene que aplicar esta relación. Esta es indicada por medio del simbolo ">" y solamente los 
+                                sub-elementos que sean hijos directos de una clase seran afectados por los estilos, por ejemplo: 
+                                .clase1 > .clase2
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="left-bottom-panel">
+            <div class="content-box scrollable">
+                <div>
+                    <h3>Reto</h3>
+                    <div>
+                        Los selectores serán utilizados de la siguiente forma: los nombres son equivalentes al selector 
+                        "identificador" y el tipo es equivalente al selector "clase".
+                        <br>Debes modificar el color según las siguientes indicaciones:
+                        <ul>
+                            <li>Un fantasma de color azul</li>
+                            <li>Dos o más de color naranja</li>
+                            <li>Dos o más de color verde</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="challenge-section type-text">
+                    <div class="brackets">
+                        <input> &lbrace;
+                        <br>&emsp;color: blue;
+                        <br>&rbrace;
+                    </div>
+                    <div class="brackets">
+                        <input> &lbrace;
+                        <br>&emsp;color: orange;
+                        <br>&rbrace;
+                    </div>
+                    <div class="brackets">
+                        <input> &lbrace;
+                        <br>&emsp;color: green;
+                        <br>&rbrace;
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Panel izquierdo -->
+    <div class="right-panel">
+        <div class="game-box">
+            <div id="selector-colors">
+                <div>
+                    <div>
+                        <img src="assets/images/ghost.png">
+                        <div>
+                            <div class="blurred"></div>
+                            <div class="name">
+                                <div style="text-align: center;">
+                                    Nombre: Carlos
+                                    <br>Tipo: bueno
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="assets/images/ghost.png">
+                        <div>
+                            <div class="blurred"></div>
+                            <div class="name">
+                                <div style="text-align: center;">
+                                    Nombre: Luisa
+                                    <br>Tipo: malo
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="assets/images/ghost.png">
+                        <div>
+                            <div class="blurred"></div>
+                            <div class="name">
+                                <div style="text-align: center;">
+                                    Nombre: Kevin
+                                    <br>Tipo: Bueno
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="selector-colors">
+                <div>
+                    <div>
+                        <img src="assets/images/ghost.png">
+                        <div>
+                            <div class="blurred"></div>
+                            <div class="name">
+                                <div style="text-align: center;">
+                                    Nombre: Karla
+                                    <br>Tipo: malo
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="assets/images/ghost.png">
+                        <div>
+                            <div class="blurred"></div>
+                            <div class="name">
+                                <div style="text-align: center;">
+                                    Nombre: Jorge
+                                    <br>Tipo: bueno
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="assets/images/ghost.png">
+                        <div>
+                            <div class="blurred"></div>
+                            <div class="name">
+                                <div style="text-align: center;">
+                                    Nombre: Ana
+                                    <br>Tipo: malo
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- <div id="selector-colors">
+                <div>
+                    <div>
+                        <img src="assets/images/ghost.png">
+                        <div>
+                            <div class="blurred"></div>
+                            <div class="name">
+                                <div style="text-align: center;">
+                                    Nombre: César
+                                    <br>Tipo: bueno
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="assets/images/ghost.png">
+                        <div>
+                            <div class="blurred"></div>
+                            <div class="name">
+                                <div style="text-align: center;">
+                                    Nombre: Neily
+                                    <br>Tipo: malo
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="assets/images/ghost.png">
+                        <div>
+                            <div class="blurred"></div>
+                            <div class="name">
+                                <div style="text-align: center;">
+                                    Nombre: Fernando
+                                    <br>Tipo: bueno
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+        </div>
+    </div>
+</div>
