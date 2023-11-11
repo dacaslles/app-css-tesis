@@ -6,8 +6,7 @@ import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-init-page',
-  templateUrl: './init-page.component.html',
-  styleUrls: ['./init-page.component.scss']
+  templateUrl: './init-page.component.html'
 })
 export class InitPageComponent implements OnInit {
 

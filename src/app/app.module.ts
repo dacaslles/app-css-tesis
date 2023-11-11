@@ -9,6 +9,7 @@ import { LevelsModule } from './modules/levels/levels.module';
 import { AlertService } from './shared/services/alert.service';
 import { SharedModule } from './shared/shared.module';
 import { NgxSpinnerModule } from 'ngx-spinner';
+import { NavigationService } from './shared/services/navigation.service';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { NgxSpinnerModule } from 'ngx-spinner';
     NgxSpinnerModule
   ],
   providers: [
-    AlertService
+    AlertService,
+    NavigationService
   ],
   bootstrap: [AppComponent]
 })

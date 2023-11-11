@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { AbstractControl, FormControl, FormGroup, Validators } from '@angular/forms';
 import { GhostImages } from 'src/app/configs/app.config';
+import { NavigationService } from 'src/app/shared/services/navigation.service';
 
 @Component({
   selector: 'app-lesson-s1',
@@ -12,7 +13,7 @@ export class LessonS1Component implements OnInit {
   cssSections: Array<{name:string, costume: string}>;
   lessonOneForm: FormGroup;
 
-  constructor() {
+  constructor(private navigationService: NavigationService) {
     let normalurl = GhostImages.find(f => f.type == 'normal')?.image
     this.ghostNames = [
       {name: 'GIDEON', type: 'BUENO', position: 0, url: normalurl},
@@ -74,6 +75,10 @@ export class LessonS1Component implements OnInit {
         ghostSelected.url = image?.image;
       }
     }
+  }
+
+  nextLesson(): void {
+    this.navigationService.goToLevel(1);
   }
 
 }
